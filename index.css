@@ -1,0 +1,68 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(115deg, #007f73, #97e7e1);
+  height: 100vh;
+}
+
+#countLabel {
+  margin: 20px 0;
+  font-size: 70px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.buttonContainer button {
+  padding: 5px 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+}
+
+#increaseBtn {
+  background: hsl(136, 65%, 50%);
+  transition: all 0.3s ease;
+}
+
+#resetBtn {
+  background: hsl(201, 100%, 43%);
+  transition: all 0.3s ease;
+}
+
+#decreaseBtn {
+  background: hsl(0, 80%, 53%);
+  transition: all 0.3s ease;
+}
+
+/* Decrease Button Hover */
+
+#decreaseBtn:hover {
+  background: hsl(0, 80%, 30%);
+}
+
+/* Increase Button Hover */
+#increaseBtn:hover {
+  background: hsl(136, 65%, 30%);
+}
+
+/* Reset Button Hover */
+#resetBtn:hover {
+  background: hsl(201, 100%, 30%);
+}
